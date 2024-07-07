@@ -15,8 +15,7 @@
         "TCGB Kapanış Tarihi"
     ],
     "sender_receiver_tax_number": [
-        "Gönderici / Alıcı Vergi No",
-        "Gönderici/Alıcı Adı"
+        "Gönderici / Alıcı Vergi No"
     ],
     "receiver_name": [
         "Alıcı Adı"
@@ -87,7 +86,8 @@
         "Yükleme/Boşaltma Yapılan Gümrük İdaresi Adı"
     ],
     "sender_receiver_name": [
-        "Gönderici / Alıcı Adı"
+        "Gönderici / Alıcı Adı",
+        "Gönderici/Alıcı Adı"
     ],
     "sender_name": [
         "Gönderen Adı"
