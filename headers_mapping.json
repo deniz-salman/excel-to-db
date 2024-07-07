@@ -1,0 +1,158 @@
+{
+    "tcgb_customs_administration_code": [
+        "TCGB  Gümrük İdaresi Kodu"
+    ],
+    "tcgb_customs_administration_name": [
+        "TCGB  Gümrük İdaresi Adı"
+    ],
+    "tcgb_registration_number": [
+        "TCGB Tescil No"
+    ],
+    "tcgb_registration_date": [
+        "TCGB Tescil Tarihi"
+    ],
+    "tcgb_closing_date": [
+        "TCGB Kapanış Tarihi"
+    ],
+    "sender_receiver_tax_number": [
+        "Gönderici / Alıcı Vergi No",
+        "Gönderici/Alıcı Adı"
+    ],
+    "receiver_name": [
+        "Alıcı Adı"
+    ],
+    "destination_country_17_code": [
+        "Gideceği Ülke (17) Kodu"
+    ],
+    "destination_country_17_name": [
+        "Gideceği Ülke (17)  Adı"
+    ],
+    "country_of_origin_code": [
+        "Menşe Ülke Kodu"
+    ],
+    "country_of_origin_name": [
+        "Menşe Ülke Adı"
+    ],
+    "delivery_terms_code": [
+        "Teslim Şekli Kodu"
+    ],
+    "item_serial_number": [
+        "Kalem Sıra No"
+    ],
+    "item_regime_code": [
+        "Kalem Rejim Kodu"
+    ],
+    "item_regime_description": [
+        "Kalem Rejim Açıklması"
+    ],
+    "gtip_code": [
+        "GTIP Kodu"
+    ],
+    "gtip_description": [
+        "GTIP Açıklaması"
+    ],
+    "commercial_description": [
+        "31. Ticari Tanımı"
+    ],
+    "tcgb_status_description": [
+        "TCGB Statü Açıklaması"
+    ],
+    "invoice_amount": [
+        "Fatura Tutarı"
+    ],
+    "invoice_amount_currency_code": [
+        "Fatura Tutarı Döviz Türü Kodu"
+    ],
+    "measurement_goods_quantity": [
+        "Ölçü (Eşya) Miktarı"
+    ],
+    "measurement_unit_description": [
+        "Ölçü Birimi Açıklaması"
+    ],
+    "net_weight_kg": [
+        "Net Ağırlık (Kg)"
+    ],
+    "calculated_item_value_usd": [
+        "Hesaplanmış Kalem Kıymeti USD Değeri"
+    ],
+    "statistical_value_usd": [
+        "İstatistiki Kıymet USD Değeri"
+    ],
+    "customs_administration_code": [
+        "Gümrük İdaresi Kodu",
+        "Yükleme/Boşaltma Yapılan Gümrük İdaresi Kodu"
+    ],
+    "customs_administration_name": [
+        "Gümrük İdaresi Adı",
+        "Yükleme/Boşaltma Yapılan Gümrük İdaresi Adı"
+    ],
+    "sender_receiver_name": [
+        "Gönderici / Alıcı Adı"
+    ],
+    "sender_name": [
+        "Gönderen Adı"
+    ],
+    "country_of_exit_code": [
+        "Çıkış Ülkesi Kodu"
+    ],
+    "country_of_exit_name": [
+        "Çıkış Ülkesi Adı"
+    ],
+    "invoice_currency_code": [
+        "Fatura Döviz Kodu"
+    ],
+    "tcgb_regional_directorate_code": [
+        "TCGB Bölge Müdürlüğü Kodu"
+    ],
+    "tcgb_regional_directorate_name": [
+        "TCGB Bölge Müdürlüğü Adı"
+    ],
+    "customs_statistics_date": [
+        "TCGB Gümrük İdaresi Adı"
+    ],
+    "insurance_amount": [
+        "Sigorta Tutarı"
+    ],
+    "receiver_identity_number": [
+        "Alıcı Kimlik No"
+    ],
+    "transportation_mode_description_of_border_vehicle": [
+        "Sınırdaki Aracın Taşıma Şekli Açıklaması"
+    ],
+    "transportation_mode_code_of_border_vehicle": [
+        "Sınırdaki Aracın Taşıma Şekli Kodu"
+    ],
+    "country_of_trade_name": [
+        "Ticaret Yapılan Ülke Adı"
+    ],
+    "country_of_trade_code": [
+        "Ticaret Yapılan Ülke Kodu"
+    ],
+    "country_of_registration_of_exit_vehicle_name": [
+        "Çıkıştaki Aracın Kayıtlı Olduğu Ülke Adı"
+    ],
+    "country_of_registration_of_exit_vehicle_code": [
+        "Çıkıştaki Aracın Kayıtlı Olduğu Ülke Kodu"
+    ],
+    "user_unit_value_usd": [
+        "Kullanıcı Birim Kıymeti USD Değeri"
+    ],
+    "freight_amount_tl": [
+        "Navlun Tutarı TL Değeri"
+    ],
+    "gross_weight": [
+        "Brüt Ağırlık"
+    ],
+    "measurement_unit": [
+        "Ölçü Birimi"
+    ],
+    "measurement_unit_code": [
+        "Ölçü Birimi Kodu"
+    ],
+    "statistical_unit_code": [
+        "İstatistiki Birim Kodu"
+    ],
+    "statistical_unit_description": [
+        "İstatistiki Birim Açıklaması"
+    ]
+}

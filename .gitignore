@@ -1,0 +1,4 @@
+*.DS_Store
+excel_files/*
+all_inserts.sql
+headers_output.txt
