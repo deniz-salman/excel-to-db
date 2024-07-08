@@ -108,7 +108,8 @@
         "TCGB Bölge Müdürlüğü Adı"
     ],
     "customs_statistics_date": [
-        "TCGB Gümrük İdaresi Adı"
+        "TCGB Gümrük İdaresi Adı",
+        "Gümrük İstatistik Tarihi (Bordro Tarihi)"
     ],
     "insurance_amount": [
         "Sigorta Tutarı"
