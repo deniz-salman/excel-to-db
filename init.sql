@@ -18,7 +18,7 @@ CREATE TABLE delivery (
     receiver_name TEXT,
     destination_country_17_code VARCHAR(10),
     destination_country_17_name VARCHAR(100),
-    country_of_origin_code INT,
+    country_of_origin_code VARCHAR(10),
     country_of_origin_name VARCHAR(100),
     delivery_terms_code VARCHAR(10),
     item_serial_number INT,
