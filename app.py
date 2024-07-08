@@ -9,18 +9,17 @@ files_dir = 'excel_files/'
 excel_files = [os.path.join(files_dir, file) for file in os.listdir(files_dir) if file.endswith('.xlsx')]
 insert_data_file = 'insert.sql'
 
-
 open(insert_data_file, 'w').close()
 
 def escape_sql_value(value):
     if pd.isna(value):
         return 'NULL'
     elif isinstance(value, str):
-        return f"""'{value.replace("'", "''")}'"""
+        return "'{}'".format(value.replace("'", "''").replace("\\", "\\\\").replace("\n", "\\n"))
     elif isinstance(value, (int, float)):
         return str(value)
     else:
-        return f"""'{value}'"""
+        return "'{}'".format(value)
 
 for excel_file in excel_files:
     df = pd.read_excel(excel_file, engine='openpyxl')
@@ -43,3 +42,5 @@ for excel_file in excel_files:
             f.write(sql_statement + '\n')
 
     print(f"Extracted data from {excel_file}.")
+
+print("SQL generation completed.")
