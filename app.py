@@ -21,6 +21,10 @@ def escape_sql_value(value):
     else:
         return "'{}'".format(value)
 
+all_values = []
+table_name = "delivery"
+columns = None
+
 for excel_file in excel_files:
     df = pd.read_excel(excel_file, engine='openpyxl')
 
@@ -32,15 +36,24 @@ for excel_file in excel_files:
                 break
     df.rename(columns=new_columns, inplace=True)
 
-    table_name = "delivery"
-    columns = ", ".join([f"`{col}`" for col in df.columns])
+    if columns is None:
+        columns = ", ".join([f"`{col}`" for col in df.columns])
 
-    with open(insert_data_file, 'a') as f:
-        for _, row in df.iterrows():
-            values = ", ".join([escape_sql_value(val) for val in row.values])
-            sql_statement = f"INSERT INTO {table_name} ({columns}) VALUES ({values});"
-            f.write(sql_statement + '\n')
+    for _, row in df.iterrows():
+        values = ", ".join([escape_sql_value(val) for val in row.values])
+        all_values.append(f"({values})")
+
+        if len(all_values) >= 10000: 
+            sql_statement = f"INSERT INTO {table_name} ({columns}) VALUES {', '.join(all_values)};"
+            with open(insert_data_file, 'a') as f:
+                f.write(sql_statement + '\n')
+            all_values = []
 
     print(f"Extracted data from {excel_file}.")
+
+if all_values:
+    sql_statement = f"INSERT INTO {table_name} ({columns}) VALUES {', '.join(all_values)};"
+    with open(insert_data_file, 'a') as f:
+        f.write(sql_statement + '\n')
 
 print("SQL generation completed.")
