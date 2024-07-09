@@ -1,6 +1,9 @@
 import json
 import os
 import pandas as pd
+import sys
+
+batch_size_limit = 1000 * 1024 * 1024  
 
 with open('headers_mapping.json', 'r') as f:
     header_mapping = json.load(f)
@@ -21,6 +24,9 @@ def escape_sql_value(value):
     else:
         return "'{}'".format(value)
 
+def get_batch_size_in_bytes(batch):
+    return sys.getsizeof(", ".join(batch))
+
 all_values = []
 table_name = "delivery"
 columns = None
@@ -34,6 +40,9 @@ for excel_file in excel_files:
             if column in values:
                 new_columns[column] = key
                 break
+        else:
+            new_columns[column] = column  
+
     df.rename(columns=new_columns, inplace=True)
 
     if columns is None:
@@ -43,7 +52,7 @@ for excel_file in excel_files:
         values = ", ".join([escape_sql_value(val) for val in row.values])
         all_values.append(f"({values})")
 
-        if len(all_values) >= 10000: 
+        if get_batch_size_in_bytes(all_values) >= batch_size_limit:
             sql_statement = f"INSERT INTO {table_name} ({columns}) VALUES {', '.join(all_values)};"
             with open(insert_data_file, 'a') as f:
                 f.write(sql_statement + '\n')
