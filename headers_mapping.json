@@ -3,7 +3,8 @@
         "TCGB  Gümrük İdaresi Kodu"
     ],
     "tcgb_customs_administration_name": [
-        "TCGB  Gümrük İdaresi Adı"
+        "TCGB  Gümrük İdaresi Adı",
+        "TCGB Gümrük İdaresi Adı"
     ],
     "tcgb_registration_number": [
         "TCGB Tescil No"
@@ -45,7 +46,8 @@
         "Kalem Rejim Açıklması"
     ],
     "gtip_code": [
-        "GTIP Kodu"
+        "GTIP Kodu",
+        "GTIP KODU"
     ],
     "gtip_description": [
         "GTIP Açıklaması"
@@ -108,7 +110,6 @@
         "TCGB Bölge Müdürlüğü Adı"
     ],
     "customs_statistics_date": [
-        "TCGB Gümrük İdaresi Adı",
         "Gümrük İstatistik Tarihi (Bordro Tarihi)"
     ],
     "insurance_amount": [
